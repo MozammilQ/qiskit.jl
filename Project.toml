@@ -1,0 +1,7 @@
+name = "qiskit"
+uuid = "84cf4434-04d7-446a-85a0-8e449cab61e2"
+authors = ["MozammilQ <mozammilq.ai@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"

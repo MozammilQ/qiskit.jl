@@ -1,10 +1,10 @@
 module qiskit
 
-using Makie
+using GLMakie
 
 include("./drawers.jl")
 include("./circuit.jl")
-#include("./circuit_drawer.jl")
+include("./circuit_drawer.jl")
 
 end
 

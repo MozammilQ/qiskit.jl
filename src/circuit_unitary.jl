@@ -1,7 +1,7 @@
 
 
 
-function serl_untry(oper_matx_sym::Array{Array,1},1})::Array{Complex{Float64},2}
+function parll_untry(oper_matx_sym::Array{Array,1},1})::Array{Complex{Float64},2}
 	mat=[ [1 0];[0 1] ]
 	for i in 1:length(oper_matx_sym)
 		sym::Symbol=oper_matx_sym[i][1]
@@ -35,6 +35,7 @@ function serl_untry(oper_matx_sym::Array{Array,1},1})::Array{Complex{Float64},2}
 	end
 end
 
+using Kronecker
 mat=[[1 0];[0 1]]
 for i in 1:num_q
 	for j in 1:length(oper_per_g[i])
@@ -44,7 +45,6 @@ end
 
 
 f_untry=mat[1]
-using Kronecker
 for i in 2:length(mat)
 	f_untry=kronecker(f_untry,mat[i])
 end
